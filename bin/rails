@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 if !ENV["RAILS_ENV"] && (ARGV[0] == "s" || ARGV[0] == "server")
-  ENV["UNICORN_PORT"] ||= "3000"
+  ENV["UNICORN_PORT"] ||= "3002"
 
   if ARGV[1] == "-p" && (port = ARGV[2].to_i) > 0
     ENV["UNICORN_PORT"] = port.to_s
